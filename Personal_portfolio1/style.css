@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url("/image/chill_ocean.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 5%;
+}
+.container{
+    /* background: rgb(255, 153, 0); */
+    height: 100%;
+    border-radius: 1rem;
+    position: relative;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px #fff;
+    transform: scale(0);
+    animation: zoom-it 1s ease forwards;
+}
+@keyframes zoom-it{
+    100%{
+        transform: scale(1);
+    }
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 5%;
+    /* background: rgb(140, 122, 158); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+.logo{
+    font-size: 2.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header-bar a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 3rem;
+    border-bottom: 3px solid transparent;
+}
+.header-bar a:hover{
+    border-color: #fff;
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 50px 5% 0;
+    color: #fff;
+    position: relative;
+}
+.home .home-desc{
+    width: 60%;
+}
+.home .home-desc h1{
+    font-size: 3.5rem;
+    margin: 0;
+}
+.home .home-desc p{
+    font-size: 1.4rem;
+}
+.home .home-desc .home-item{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    background: #fff;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 10px #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    border: 2px solid #fff;
+}
+.btn:hover{
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+.home-item .home-icons{
+    margin-left: 1.1rem;
+}
+.home-item .home-icons a{
+    display: inline-flex;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    font-size: 1.1rem;
+    color: #fff;
+    box-shadow: 0 0 5px #fff;
+    transition: all 0.5s;
+    text-decoration: none;
+    margin: 0 8px;
+}
+.home-item .home-icons a:hover{
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 10px #fff;
+}
+.home-img{
+    width: 40%;
+}
+.home-img img{
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff;
+}
